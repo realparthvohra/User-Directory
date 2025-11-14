@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e0e0e0;
+}
+
+.container {
+    background-color: #f5eeee;
+    padding: 50px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.1);
+    height: auto;
+    width: 400px;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.container:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0 , 0.4);
+    transform: translateY(-5px);
+}
+
+.heading {
+    margin-bottom: 20px;
+    color: #333;
+    transition: all 0.8s ease;
+}
+
+.heading:hover {
+    color: #007BFF;
+}
+
+#searchbar {
+    padding: 10px;
+    width: 200px 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#searchbar:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+#searchbar:hover {
+    border-color: #025fc2;
+}
+
+.searchbtn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.searchbtn:hover {
+    background-color: #0056b3;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchbtn:active {
+    background-color: #004080;
+    transform: scale(0.98);
+}
+
+.usercontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+
+}
+
+.usercontainer .useritem img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.usercontainer .useritem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.usercontainer .useritem:hover {
+    background-color: #e0e0e0;
+}
+
+.usercontainer .useritem:active {
+    background-color: #ccc;
+}
+
+.innerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.usercontainer .useritem .innerdiv .username {
+    font-size: 19px;
+}
+
